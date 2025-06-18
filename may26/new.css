@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* Shorthand */
+    background: url(/may26/bgc3.avif) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero h1{
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    
+}
+.hero p{
+    color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+
+}
+.btn{
+  text-decoration: none;
+  background-color: rgb(188, 139, 76);
+  color: black;
+  padding: 10px;
+  border: 2px solid rgb(234, 205, 148);
+}
+
+.container{
+    height: 400px;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    /* flex-direction se main axis chalta hai aur justify-content main axis se chalta hai */
+    /* cross-axis main axis ke perpendicular rehta hai aur align-items cross-axis se chalta hai */
+
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+background-color: yellow;
+
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+img{
+    width: 20%;
+}

@@ -1,0 +1,33 @@
+/* BOX MODEL */
+
+/* the space between border and the content is known as padding
+   the space outside the border is called as margin
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: 5px solid black;
+    /* all sides  
+     padding:10px;
+    */
+    /* top/bottom right/left
+     padding:10px 20px; 
+    */
+    /* shorthand Top bottom right left  */
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px 40px;
+
+}
+.box1{
+    height:100px;
+    width:100px;
+    border: 5px solid saddlebrown;
+    padding: 20px;
+}
