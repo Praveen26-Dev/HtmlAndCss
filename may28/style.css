@@ -10,7 +10,7 @@
     background-color: yellow;
     display: flex;
     flex-direction: row;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 
 }
 .box{
