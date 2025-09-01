@@ -54,7 +54,27 @@
             height: 10%;
             background-color: #8BC6EC;
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
 
+        #leftBox{
+         /* width: fit-content; */
+         height: 100%;
+         
+         display: flex;
+         gap: 15px;
+         align-items: center;
+        }
+        .imgBox img{
+            height: 3rem;
+            width: 3rem;
+        }
+        .rightBox{
+          
         }
         #paymentBtn{
             width: 80%;
@@ -68,6 +88,7 @@
             text-decoration: none;
             color: rgb(46,43,44);
             font-weight: bold;
+            font-size: large;
         }
     </style>
 </head>
@@ -81,7 +102,18 @@
 
            </div>
            <div id="amountBox">
-
+               <div id="leftBox">
+                <div class="imgBox">
+                    <img src="img1.png" alt="">
+                </div>
+                <div id="textAmount">
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
+                </div>
+               </div>
+               <div class="rightBox">
+                <a href="">change</a>
+               </div>
            </div>
            <button id="paymentBtn">Proceed To Payment</button>
            <div class="cancelBox">
