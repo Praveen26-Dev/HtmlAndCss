@@ -64,6 +64,9 @@ html,body{
   left: 17.9%;
   position: absolute;   
 }
+#nav h3{
+    display: none;
+}
 #center{
     height: 90%;
     width: 100%;
@@ -135,9 +138,9 @@ html,body{
     padding-top: 1.4vw;
 }
 
-/* #over2 img{
+#over2 img{
     height: 3vh;
-} */
+}
 
 #scroll{
     height: 40vh;
@@ -373,4 +376,138 @@ width: 50%;
 #footer{
     height: 100%;
     width: 100%;
+}
+
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    #nav{
+    height:8vh;
+    margin-top: 20px;
+    padding: 0 5vw;
+}
+#nav h1{
+    width: 40%;
+    justify-content: flex-start;
+    font-size: 25px;
+}
+#nav h3{
+    display: block;
+}
+#nav h2{
+    /* background-color: #fff; */
+    display: none;
+        }
+#nav h1::after{  
+  display: none; 
+}
+
+
+#center{
+    height: 50%;
+    width: 100%;
+    /* background-color: #7754a9; */
+    padding: 4vw;
+    position: relative;
+
+}
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: fit-content;
+    width: 100%;
+    /* background-color: #40957d; */
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    background-color: rgba(0, 0, 0, 0.155);
+    backdrop-filter: blur(2px);
+    
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    margin-bottom: 1.5vw;
+
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 4.5vw;
+    font-weight: 100;
+}
+#over1 h2{
+    /* font-family: monument; */
+    /* font-size: 3.5vw;
+    font-weight: 100; */
+    font-size: 3vw;
+    padding: 3vw 4.2vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+ 
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color: aliceblue; */
+    border-top: 2px solid #fff;
+    
+}
+#over2 h4{
+    font-size: 3.3vw;
+    font-weight: 500;
+    color: #fff;
+    padding-top: 1.4vw;
+}
+
+#over2 img{
+    height: 4.5vh;
+}
+#scroll{
+    height: 20vh;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 1.5vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 95%;
+    width: 200%;
+    /* background-color: #c14444; */
+    padding: 1vw;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#scroll img{
+    /* display: none; */
+    height: 100%;
+    width: 15.3%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1vw;
+    object-position: 30% 30%;
+
+}
+
 }
