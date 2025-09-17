@@ -78,5 +78,36 @@ a{
     font-size: 1rem;
     font-weight: 600;
     color: rgb(26, 23, 23);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
 }  
+#card-title-anchor:hover #card-title{
+    color: rgb(75, 75, 114);
+}
+
+#card-title-container #card-desc{
+    color: rgb(63, 62, 62);
+    font-size: 1rem;
+    
+}
+
+#card-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#author-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#author-avtar{
+    height: 5rem;
+    width: 2.5rem;
+}
+#author-avtar #avtar{
+    height: 2rem;
+    width: 1rem;
+}
+
