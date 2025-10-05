@@ -3,6 +3,12 @@
     src: url('./NeueHaasDisplayMediu.ttf');
 }
 
+@font-face {
+    font-family: neue;
+    font-weight: 100;
+    src: url('./NeueHaasDisplayLight.ttf');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -178,6 +184,7 @@ nav{
     width: 100vw;
     background-color:#EFEAE3;
     padding: 7vw 0;
+    position: relative;
 }
 #moving-text{
     white-space: nowrap;
@@ -218,4 +225,61 @@ nav{
     to{
    transform: translateX(-100%);
     }
+}
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    /* background-color: #a59797; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5vw;
+    position: relative;
+    z-index: 9;
+}
+
+#page2-bottom h1{
+    font-size: 3.5vw;
+    width: 60%;
+    line-height: 4vw;
+}
+
+#bottom-part2{
+    width: 25%;
+    /* background-color: #fff; */
+
+}
+
+#bottom-part2 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p{
+    font-weight: 100;
+    margin-top: 2vw;
+
+}
+#page2 #gooey{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    background:linear-gradient(to top,#FE320A,#fe5b0a);
+    border-radius: 50%;
+    top: 58%;
+    left: 25%;
+    filter: blur(20px);
+}
+
+
+
+
+
+
+
+
+
+#page3{
+    min-height: 100vh;
+    width: 100%;background-color: #EFEAE3;
 }
